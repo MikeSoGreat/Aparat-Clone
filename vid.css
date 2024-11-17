@@ -1,0 +1,287 @@
+.vid-grid-music,
+.vid-grid-sport,
+.vid-grid-top,
+.vid-grid-suggest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 0;
+    row-gap: 0;
+    margin-right: 260px;
+    position: relative;
+    padding-top: 120px;
+    margin-left: 30px;
+    justify-items: center;
+}
+
+
+.vid-grid-music,
+.vid-grid-sport,
+.vid-grid-suggest {
+    padding-top: 70px;
+}
+
+
+.vid-grid-suggest .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    top: -40px;
+    right: -5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid-grid-music .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    top: -40px;
+    right: -5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid-grid-sport .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    top: -40px;
+    right: -5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid-grid-top .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    top: -40px;
+    right: -5px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid {
+    position: relative;
+    width: 262px;
+    font-size: 13px;
+    line-height: 21.672px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.vid .title {
+    color: rgb(85, 84, 84);
+    cursor: pointer;
+    width: 237px;
+    margin-bottom: 2px;
+}
+
+.vid .title:hover {
+    opacity: 0.8;
+}
+
+.vid .pic {
+    width: 262px;
+    cursor: pointer;
+}
+
+.vid .name, .info {
+    color: grey;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.vid .name {
+    display: flex;
+    align-items: center;
+}
+
+.vid .tick {
+    width: 12px;
+    margin-right: 5px;
+}
+
+.vid .pic-div {
+    position: relative;
+}
+
+.vid .pic-div .time {
+    border-radius: 3px;
+    font-size: 11px;
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+    padding: 1px 3px 0px 3px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    border: solid 1px rgb(245, 245, 249);
+    bottom: -15px;
+}
+
+/* Media Optimization */
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+    .vid-grid-music,
+    .vid-grid-sport,
+    .vid-grid-top,
+    .vid-grid-suggest {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .vid-grid-music .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 0;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-sport .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 0;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-top .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 0;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .vid-grid-music,
+    .vid-grid-sport,
+    .vid-grid-top,
+    .vid-grid-suggest {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .vid-grid-music .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 0;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-sport .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 0;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-top .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 0;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .vid-grid-music,
+    .vid-grid-sport,
+    .vid-grid-top,
+    .vid-grid-suggest {
+        margin-right: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vid-grid-suggest .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-music .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-sport .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+    
+    .vid-grid-top .special {
+        position: absolute;
+        color: rgba(0, 0, 0, 0.973);
+        top: -40px;
+        right: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+    .vid {
+        position: relative;
+        width: 320px;
+        font-size: 13px;
+        line-height: 21.672px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vid .pic {
+        width: 320px;
+    }
+
+    .vid .title {
+        width: 290px;
+    }
+}
+
